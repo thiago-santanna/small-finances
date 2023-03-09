@@ -20,14 +20,8 @@ public class Contract {
     @Id
     @GeneratedValue
     private UUID id;
-
     @Enumerated(EnumType.STRING)
     private Situation situation;
-
-    @OneToOne(fetch = FetchType.EAGER)
-    private Company company;
-
-
     private LocalDate contractDate;
 
     private LocalDate contractExpiration;
