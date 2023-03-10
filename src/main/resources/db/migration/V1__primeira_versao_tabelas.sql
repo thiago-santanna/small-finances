@@ -1,4 +1,4 @@
-create table tb_companys (
+create table tb_companies (
                              id binary(16) not null,
                              name varchar(80) not null,
                              contract_id binary(16),
