@@ -36,7 +36,7 @@ create table tb_users (
                           company_id binary(16),
                           primary key (id)
 );
-alter table tb_companys
+alter table tb_companies
     add constraint FKaacrrqfp8hxw0fual89lsmaog
         foreign key (contract_id)
             references tb_contracts (id);
@@ -51,8 +51,8 @@ alter table tb_releases
 alter table tb_suppliers
     add constraint FK2flvxiujpurh3954sxrxena2r
         foreign key (company_id)
-            references tb_companys (id);
+            references tb_companies (id);
 alter table tb_users
     add constraint FKk30d3jxwil0g999j8nbq65q97
         foreign key (company_id)
-            references tb_companys (id);
+            references tb_companies (id);

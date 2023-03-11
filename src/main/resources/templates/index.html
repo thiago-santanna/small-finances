@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+<body>
+    <header class="text-white mb-2">
+        <nav class="navbar navbar-expand-lg bg-success text-white">
+            <div class="w-100">
+                <div class="dropdown d-md-none container">
+                    <img src="user.png">
+                    <button class="btn btn-success dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Menu
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Lançamentos</a></li>
+                        <li><a class="dropdown-item" href="#">Fornecedores</a></li>
+                        <li><a class="dropdown-item" href="#">Perfil</a></li>
+                        <li><a class="dropdown-item" href="#">Sair</a></li>
+                    </ul>
+                </div>
+
+                <ul class="nav justify-content-center d-none d-md-flex">
+                    <li class="">
+                        <img src="user.png">
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-light" aria-current="page" href="#">Lançamentos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-light" href="#">Fornecedores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-light" href="#">Perfil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-light" href="#">Sair</a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+    <div class="container vh-100">
+        <h3 class="text-center mt-1">
+            Confira abaixo o resumo financeiro
+        </h3>
+        <div class="card text-center">
+            <div class="card-header">
+                Vencimentos do dia <span class="fw-bold">11/03/2023</span>
+            </div>
+            <div class="card-body">
+                <div class="d-flex justify-content-between  flex-column">
+                    <div>
+                        <span class="d-block w-100 h4 pb-2 mb-5 text-success border-bottom border-success">Credidos</span>
+                        <table class="table table-striped">
+                            <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Fornecedor</th>
+                                <th scope="col">Situação</th>
+                                <th scope="col">Valor</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Ativo</td>
+                                <td>100,00</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Jacob</td>
+                                <td>Inativo</td>
+                                <td>1000,00</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>James</td>
+                                <td>Finalizado</td>
+                                <td>4500,00</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                        <span class="d-block w-100 h4 pb-2 mb-5 text-danger border-bottom border-danger">Débitos</span>
+                        <table class="table table-striped">
+                            <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Fornecedor</th>
+                                <th scope="col">Situação</th>
+                                <th scope="col">Valor</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Ativo</td>
+                                <td>100,00</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Jacob</td>
+                                <td>Inativo</td>
+                                <td>1000,00</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>James</td>
+                                <td>Finalizado</td>
+                                <td>4500,00</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+<!--                <button class="btn btn-primary" type="button">Atualizar</button>-->
+            </div>
+            <div class="card-footer text-muted text-start d-flex ">
+                <span>
+                    Saldo do dia : <span class="fw-bold">400500,00</span>
+                </span>
+                <span class="ms-5">
+                    Saldo do geral : <span class="fw-bold">500000,00</span>
+                </span>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>
